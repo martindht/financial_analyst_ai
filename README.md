@@ -10,4 +10,6 @@ This project aims to generate stock outlook reports with up-to-date financial ne
 4. Run the Streamlit application and enter the stock ticker to generate the report and show the ticker.
 
 ## Single Stock Outlook
- <img src="/gifs/Competitor_Analysis_Demonstration.gif?raw=true">
+<a href="https://youtu.be/DcYLT37ImBY">
+  <img src="/assets/single_outlook.jpg">
+</a>
