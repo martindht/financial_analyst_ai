@@ -1,0 +1,9 @@
+openai
+pandas
+streamlit
+llama-index
+jinja2
+polygon
+requests
+beautifulsoup4
+nltk

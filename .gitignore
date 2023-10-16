@@ -1,0 +1,10 @@
+# .gitignore for Python projects
+__pycache__/
+.vs/
+env/
+venv/
+*.pyc
+*.pyo
+.pytest_cache/
+.coverage
+.DS_Store
