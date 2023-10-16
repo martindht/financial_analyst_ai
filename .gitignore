@@ -3,6 +3,7 @@ __pycache__/
 .vs/
 env/
 venv/
+api_keys.txt
 *.pyc
 *.pyo
 .pytest_cache/

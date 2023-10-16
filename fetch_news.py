@@ -3,14 +3,10 @@ import requests
 from datetime import datetime
 from bs4 import BeautifulSoup
 
-# Define your Polygon.io API key
 api_key = config.POLYGON_API_KEY
 os.environ['POLYGON_API_KEY'] = api_key
 
-# Define the symbols for which you want to fetch news articles
 symbols = ['GOOG', 'NVDA', 'AAPL', 'MSFT']
-
-# Define the base URL for Polygon.io's news API
 base_url = 'https://api.polygon.io/v2/reference/news'
 
 

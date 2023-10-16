@@ -1,20 +1,19 @@
 import os, config
 import openai
-from llama_index import GPTVectorStoreIndex, StorageContext, load_index_from_storage
-os.environ['OPENAI_API_KEY'] = config.OPENAI_API_KEY
-openai.api_key = os.environ.get('OPENAI_API_KEY')
-
 import streamlit as st
 from llama_index import ServiceContext, LLMPredictor
 from langchain.chat_models import ChatOpenAI
+from llama_index import StorageContext, load_index_from_storage
+
+
+os.environ['OPENAI_API_KEY'] = config.OPENAI_API_KEY
+openai.api_key = os.environ.get('OPENAI_API_KEY')
 
 llm = ChatOpenAI(model_name='gpt-4', max_tokens=6000)
-
 llm_predictor = LLMPredictor(llm=llm)
 
 service_context = ServiceContext.from_defaults(llm_predictor=llm_predictor)
 
-# index = GPTVectorStoreIndex.load_from_disk('index_news.json', service_context=service_context)
 storage_context = StorageContext.from_defaults(persist_dir="./storage")
 index = load_index_from_storage(storage_context)
 query_engine = index.as_query_engine()
