@@ -55,5 +55,6 @@ for symbol in symbols:
 
             print(f"Saved article: {article_id}")
     else:
+        # prints if message if news is unavailable 
         print(f"Failed to fetch news for {symbol}. Status code: {response.status_code}")
 
