@@ -1,5 +1,6 @@
 ## Financial Analyst AI
 [Still continuing to update to improve efficiency...]
+- Update March 2025: new project is reworking this.... need to upload soon.
 
 ## Overview
 This project aims to generate stock outlook reports with up-to-date financial news data. It can generate two types of reports: Outlooks for Single Stocks and Competitor Analysis between Two Stocks. Since ChatGPT only contains data up to September 2021, fetching the most recent news online is necessary. The general steps of this project are as follows:
